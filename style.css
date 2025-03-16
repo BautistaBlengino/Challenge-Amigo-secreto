@@ -1,0 +1,150 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+    --color-reset: #dc3545;
+    --color-border: #C4C4C4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/amigo-secreto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-content {
+    width: min(95%, 800px);
+    margin: 20px auto;
+}
+
+.header-banner {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.main-title {
+    color: white;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 5px;
+    margin: 1.5rem 0;
+}
+
+.input-name {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 1rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+}
+
+button {
+    background: black;
+    cursor: pointer;
+    border: 2px solid var(--color-border);
+    padding: 16px 32px;
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.button-add {
+    background-color: black;
+    border-radius: 0 25px 25px 0;
+    width: 140px;
+}
+
+.button-draw {
+    background-color: black;
+}
+
+.button-reset {
+    background-color: black;
+}
+
+.name-list {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 8px 0;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.856);
+    border-radius: 25px;
+}
+
+.delete-btn {
+    background: black;
+    border: 2px solid #666;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.delete-btn:hover {
+    color: red;
+    border-color: red;
+}
+
+.result-list {
+    color: #0c05df;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background: #333;
+    border-color: #999;
+}
